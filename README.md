@@ -26,14 +26,14 @@ ssh root@sandbox.hortonworks.com
 ```
 mkdir /usr/share/maven
 cd /usr/share/maven
-wget http://mirrors.koehn.com/apache/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz
-tar xvzf apache-maven-3.2.5-bin.tar.gz
-ln -s /usr/share/maven/apache-maven-3.2.5/ /usr/share/maven/latest
-echo 'M2_HOME=/usr/share/maven/latest' >> ~/.bashrc
-echo 'M2=$M2_HOME/bin' >> ~/.bashrc
-echo 'PATH=$PATH:$M2' >> ~/.bashrc
-export M2_HOME=/usr/share/maven/latest
-export M2=$M2_HOME/bin
+wget http://mirrors.koehn.com/apache/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.tar.gz
+tar xvzf apache-maven-3.3.3-bin.tar.gz
+ln -s /usr/share/maven/apache-maven-3.3.3/ /usr/share/maven/latest
+echo 'MVN_HOME=/usr/share/maven/latest' >> ~/.bashrc
+echo 'MVN=$MVN_HOME/bin' >> ~/.bashrc
+echo 'PATH=$PATH:$MVN' >> ~/.bashrc
+export MVN_HOME=/usr/share/maven/latest
+export MVN=$MVN_HOME/bin
 export PATH=$PATH:$M2
 ```
 

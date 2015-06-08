@@ -34,7 +34,7 @@ echo 'MVN=$MVN_HOME/bin' >> ~/.bashrc
 echo 'PATH=$PATH:$MVN' >> ~/.bashrc
 export MVN_HOME=/usr/share/maven/latest
 export MVN=$MVN_HOME/bin
-export PATH=$PATH:$M2
+export PATH=$PATH:$MVN
 ```
 
 - To deploy the stack and view, run below
